@@ -25,7 +25,6 @@ while True:
     else:
         if not 3999 >= decimal_number >= 1:
             print("Sorry your number was not within the range")
-            decimal_number = int(input("Please enter a number from 1-3999...."))
         else:
             romanise(decimal_number)
             break

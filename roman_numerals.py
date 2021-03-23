@@ -1,20 +1,20 @@
-units_roman = ["I","II","III","IV","V","VI","VII","VIII","IX"]
-tens_roman = ["X","XX","XXX","XL","LX","LXX","LXXX","XC"]
-hundreds_roman = ["C","CC","CCC","CD","D","DC","DCC","DCCC","CM"]
-thousands_roman = ["M","MM","MMM"]
+units_roman = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
+tens_roman = ["X", "XX", "XXX", "XL", "LX", "LXX", "LXXX", "XC"]
+hundreds_roman = ["C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"]
+thousands_roman = ["M", "MM", "MMM"]
 
-roman_number_system = [thousands_roman,hundreds_roman,tens_roman,units_roman]
+roman_number_system = [thousands_roman, hundreds_roman, tens_roman, units_roman]
 
-def romanise (num):
+
+def romanise(num):
     roman_number = ""
     array = [int(x) for x in str(num)]
     counter = 0
     for i in array:
         if i != 0:
-            roman_number += roman_number_system[counter][i-1]
-        counter = counter+1
+            roman_number += roman_number_system[counter][i - 1]
+        counter = counter + 1
     print(roman_number)
-
 
 
 while True:
